@@ -1,0 +1,1 @@
+// This will contain all the routes for any URI starting with albums/
