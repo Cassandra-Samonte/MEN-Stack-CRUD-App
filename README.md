@@ -4,7 +4,7 @@ A MEN-Stack CRUD App using MongoDB/Mongoose, Express, Node.js, EJS and CSS
 
 ## Wire Frames
 <img width="789" alt="routes" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/6637bffd-139a-40aa-bbc3-08860e9b555b">
-<img width="1474" alt="vaporvaut-wireframe" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/64975573-521d-4b58-b075-abd30c92c102">
+<img width="1472" alt="wireframe" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/fa538abb-7fae-40a3-9c30-4657a4ae85bb">
 <img width="1276" alt="mobile" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/14e2509a-def5-40ba-b6e9-ad97c86757b5">
 <img width="1046" alt="desktop" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/60a31992-a910-4901-87c0-3a507efb1e31">
 
