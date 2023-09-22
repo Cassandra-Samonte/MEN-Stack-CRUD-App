@@ -43,10 +43,10 @@ The core objective is to deliver a fully functional MEN stack application. The t
 ## Stretch Goals
 ## Aesthetic Enhancements:
 - Leverage advanced CSS methods to enrich the user interface, incorporating transitions and animations for a more dynamic visual experience.
-- 
+
 ## API Integration:
 - Utilize AJAX to fetch data from external sources and enrich the application's content. Additionally, enable a feature allowing users to listen to albums directly within the application's interface.
-- 
+  
 ## Secure Route for Personal Note:
 - Implement an encrypted, password-protected route accessible only to specific users, such as my boyfriend (this is his collection), to view a personalized note from me.
 
