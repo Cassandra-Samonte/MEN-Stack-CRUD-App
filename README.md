@@ -13,8 +13,8 @@ A MEN-Stack CRUD App using MongoDB/Mongoose, Express, Node.js, EJS and CSS
 ## User Story 1: Collector and Community Contributor
 - As a passionate album collector and member of the vaporwave community, I want a dedicated application to archive and showcase my growing album collection. With this app, I will be able to contribute to the vibrancy of the vaporwave genre by creating a centralized hub to share my collection. This will allow others to listen, share feedback, and engage with the content.
    - With this app I will be able to:
-      - Add new albums to the collection with essential data.
-      - Update album details and status.
+      - Add new albums to the collection.
+      - Update album details.
       - Remove albums that are no longer relevant to my collection.
   
 ## User Story 2: Casual Web Visitor
