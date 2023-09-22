@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="/styles/album-details.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="content-container">
+
+        <h2 class="album-name"><%= album.artist %></h2>
+        <h2 class="album-name"><%= album.album %></h2>
+        <h2 class="album-name"><%= album.releaseDate %></h2>
+
+        <figure class="featured-album">
+            <img src="<%= album.photo %>" alt="album-cover" class="img-fluid">
+        </figure>
+
+        <section><p><strong>Description:</strong> <%= album.description %></p></section>
+       
+
+        <div class="button-row">
+            <button class="btn"><a href="/albums/<%= album._id %>/edit">Edit</a></button>
+            <form method="POST" action="/albums/<%= album._id %>?_method=DELETE">
+                <input class="btn" type="submit" value="Delete" />
+            </form>
+            <!-- <button class="btn"><a href="albums/<%= album.whereToListen._id %>">Listen Here</a></button> -->
+            <button class="btn"><a href="/reviews/new/<%= album._id %>">Review</a></button>
+        </div>
+
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+    
+</body>
+
+</html>

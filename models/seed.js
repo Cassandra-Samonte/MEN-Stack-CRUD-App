@@ -12,7 +12,7 @@ const albums = [
     album: "200% Electronica",
     releaseDate: new Date('2017-11-17'),
     whereToListen: "https://espritfantasy.bandcamp.com/album/200-electronica",
-    photo: "/assets/images/album-covers/Esprit-200%-Electronica.jpg",
+    photo: "/assets/images/album-covers/Esprit-200-Electronica.jpeg",
     description: "ESPRIT began in 2012 as the sample-based side-project of electronic pop artist 'George Clanton.' ESPRIT's first two EP's 'Girls Only' and 'Summer Night' are still considered essential listening for any newcomers to the vaporwave genre. In 2014, when vaporwave was still defined by its use of found music and manipulated samples, ESPRIT released his 'Virtua.zip' LP composed entirely of original material. In the 3 years since its release, the vaporwave scene at large has followed this trend. After 'Virtua.zip' the ESPRIT series was put on hold while George Clanton's eponymous project's '100% Electronica' LP released in late 2015. Now 3 years later, ESPRIT returns with both the successor to 'Virtua.zip' and the sister album to '100% Electronica' together in one piece. '200% Electronica' combines fully original compositions in ESPRIT's classic vaporwave style with chopped & screwed samples pulled from George Clanton's own songs, inspired by two years of touring with nothing but a Roland SP 404-SX.",
     },
     {

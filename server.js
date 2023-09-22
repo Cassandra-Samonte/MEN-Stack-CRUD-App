@@ -6,10 +6,13 @@ const express = require('express');
 const livereload = require("livereload");
 const connectLiveReload = require("connect-livereload");
 
-
 /* Require the db connection, models, and seed data
 --------------------------------------------------------------- */
 const db = require('./models');
+
+/* Require the routes in the controllers folder
+--------------------------------------------------------------- */
+const albumsCtrl = require('./controllers/albums')
 
 
 /* Create the Express app
@@ -42,8 +45,9 @@ app.use(connectLiveReload());
 
 /* Mount routes
 --------------------------------------------------------------- */
+// Home Route
 app.get('/', function (req, res) {
-    res.send('Vapor Vault')
+    res.render('home');
 });
 
 /* Seed Route - When a GET request is sent to `/seed`, the albums collection is seeded */
@@ -60,6 +64,12 @@ app.get('/seed', function (req, res) {
                 })
         })
 });
+
+
+// This tells our app to look at the `controllers/albums.js` file 
+// to handle all routes that begin with `localhost:3000/albums`
+app.use('/albums', albumsCtrl)
+
 
 /* Tell the app to listen on the specified port
 --------------------------------------------------------------- */
