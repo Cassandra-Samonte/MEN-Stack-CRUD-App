@@ -46,6 +46,20 @@ app.get('/', function (req, res) {
     res.send('Vapor Vault')
 });
 
+/* Seed Route - When a GET request is sent to `/seed`, the albums collection is seeded */
+app.get('/seed', function (req, res) {
+    // Remove any existing albums from the database
+    db.Album.deleteMany({})
+        .then(removedAlbums => {
+            console.log(`Removed ${removedAlbums.deletedCount} albums from the collection`)
+            // Seed the albums collection with the seed data
+            db.Album.insertMany(db.seedAlbums)
+                .then(addedAlbums => {
+                    console.log(`Added ${addedAlbums.length} albums to the collection`)
+                    res.json(addedAlbums)
+                })
+        })
+});
 
 /* Tell the app to listen on the specified port
 --------------------------------------------------------------- */
