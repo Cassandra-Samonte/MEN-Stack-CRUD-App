@@ -6,7 +6,7 @@ const albumSchema = new mongoose.Schema({
     artist: { type: String, required: true },
     album: { type: String, required: true },
     releaseDate: { type: Date, required: true },
-    whereToListen: { type: String, required: true },
+    whereToListen: { type: String },
     photo: { type: String, required: true },
     description: { type: String, required: true },
 });

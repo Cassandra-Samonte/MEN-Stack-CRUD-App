@@ -42,12 +42,22 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'))
 app.use(connectLiveReload());
 
+// Body parser: used for POST/PUT/PATCH routes: 
+// this will take incoming strings from the body that are URL encoded and parse them 
+// into an object that can be accessed in the request parameter as a property called body (req.body).
+app.use(express.urlencoded({ extended: true }));
+
 
 /* Mount routes
 --------------------------------------------------------------- */
 // Home Route
 app.get('/', function (req, res) {
     res.render('home');
+});
+
+// About Route
+app.get('/about', function (req, res) {
+    res.render('about')
 });
 
 /* Seed Route - When a GET request is sent to `/seed`, the albums collection is seeded */
