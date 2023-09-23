@@ -59,14 +59,16 @@ router.get('/:id/edit', (req, res) => {
 // edits the specified pet document using the form data,
 // and redirects the user back to the show page for the updated location.
 router.put('/:id', (req, res) => {
+    console.log(req.params.id);  
+    
     db.Album.findByIdAndUpdate(
-        console.log(req.params.id),
         req.params.id,
         req.body,
         { new: true }
     )
-        .then(album => res.json(album))
-})
+    .then(album => res.json(album))
+});
+
 
 // Destroy Route (DELETE/Delete): This route deletes an album 
 // using the URL parameter (which will always be the pet document's ID)
