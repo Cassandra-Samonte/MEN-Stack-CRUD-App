@@ -23,12 +23,12 @@
        
 
         <div class="button-row">
-            <button class="btn"><a href="/albums/<%= album._id %>/edit">Edit</a></button>
+            <a class="btn" href="/albums/<%= album._id %>/edit">Edit</a><br>
+            <a class="btn" target="_blank" href="<%= album.whereToListen %>">Listen</a><br>
+            <a class="btn" href="/reviews/new/<%= album._id %>">Review</a>
             <form method="POST" action="/albums/<%= album._id %>?_method=DELETE">
                 <input class="btn" type="submit" value="Delete" />
             </form>
-            <!-- <button class="btn"><a href="albums/<%= album.whereToListen._id %>">Listen Here</a></button> -->
-            <button class="btn"><a href="/reviews/new/<%= album._id %>">Review</a></button>
         </div>
 
     </div>
