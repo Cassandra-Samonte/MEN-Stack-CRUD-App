@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'Write a Review | Vapor Vault'}) %>
+    <link rel="stylesheet" href="/styles/album-form.css">
+</head>
+
+<body>
+    
+    <%- include('../partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>Leave us your thoughts</h2>
+        <h4><a href="/albums/<%= album._id %>"><%= album.album %></a></h4>
+    </section>
+    <br><br>
+    <form action="/reviews/create/<%= album._id %>" method="POST">
+        <label for="reviewer">Name:</label><br>
+        <input type="text" id="reviewer" name="reviewer" required><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="content">Content:</label><br>
+        <input type="text" id="content" name="content" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <%- include('../partials/footer.ejs') %>
+    
+</body>
+
+</html>

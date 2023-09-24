@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'Reviews | Vapor Vault'}) %>
+    <link rel="stylesheet" href="/styles/review-index.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+    <br><br><br>
+    <h1>Reviews</h1>
+    <main>
+        <section class="listings">
+            <ul>
+                <% for (let review of reviews) { %>
+                <li>
+                    <h4><%= review.reviewer %> - <%= review.title %></h4>
+                    <p>Created: <%= review.reviewDate %></p>
+                    <a href="/reviews/<%= review._id %>">Read More</a>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
