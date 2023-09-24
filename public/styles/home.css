@@ -1,0 +1,26 @@
+.container-fluid {
+    background-image: url('/assets/images/backgrounds/Main.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    flex-direction: column;   
+    height: 100vh;           
+    text-align: center;
+}
+
+h1 {
+    margin-top: 15vh;
+    font-size: 70px;
+    color: white;
+}
+
+.button {
+    color: white;
+    font-size: 35px;
+}
