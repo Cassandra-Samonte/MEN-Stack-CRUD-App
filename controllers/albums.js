@@ -18,42 +18,46 @@ const db = require('../models')
 router.get('/', function (req, res) {
     db.Album.find({})
         .then(albums => {
-            res.render('album-index', {
+            res.render('albums/album-index', {
                 albums: albums
             })
         })
 })
 
+
 // New Route (GET/Read): This route renders a form which the user will fill out to POST (create) a new location
 router.get('/new', (req, res) => {
-    res.send('You\'ve hit the new route!')
+    res.render('albums/new-form')
 })
+
 
 // Create Route (POST/Create): This route receives the POST request sent from the new route,
 // creates a new album document using the form data, 
 // and redirects the user to the new album's show page
 router.post('/', (req, res) => {
     db.Album.create(req.body)
-        .then(album => res.json(album))
+        .then(album => res.redirect('/albums/' + album._id))
 })
+
 
 // Show Route (GET/Read): Will display an individual album document
 router.get('/:id', function (req, res) {
     db.Album.findById(req.params.id)
         .then(album => {
-            res.render('album-details', {
+            res.render('albums/album-details', {
                 album: album
             })
         })
         .catch(() => res.send('404 Error: Page Not Found'))
 })
 
-// Edit Route (GET/Read): This route renders a form
-// the user will use to PUT (edit) properties of an existing pet
+
+// Edit Route (GET/Read): This route renders a form to edit an album document
 router.get('/:id/edit', (req, res) => {
     db.Album.findById(req.params.id)
-        .then(album => res.send('You\'ll be editing this album:' + album._id))
+        .then(album => res.render('albums/edit-form', { album: album }))
 })
+
 
 // Update Route (PUT/Update): This route receives the PUT request sent from the edit route, 
 // edits the specified pet document using the form data,
@@ -66,17 +70,15 @@ router.put('/:id', (req, res) => {
         req.body,
         { new: true }
     )
-    .then(album => res.json(album))
+    .then(album => res.redirect('/album/' + album._id))
 });
 
 
-// Destroy Route (DELETE/Delete): This route deletes an album 
-// using the URL parameter (which will always be the pet document's ID)
+// Destroy Route (DELETE/Delete): This route deletes an album document
 router.delete('/:id', (req, res) => {
     db.Album.findByIdAndRemove(req.params.id)
-        .then(album => res.send('You\'ve deleted this album:' + album._id))
+        .then(() => res.redirect('/albums'))
 })
-
 
 
 /* Export these routes so that they are accessible in `server.js`

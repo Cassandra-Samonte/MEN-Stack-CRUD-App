@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <%- include('./partials/head.ejs') %>
+    <%- include('../partials/head.ejs') %>
     <link rel="stylesheet" href="/styles/album-details.css">
 </head>
 
 <body>
-    <%- include('./partials/nav.ejs') %>
+    <%- include('../partials/nav.ejs') %>
 
     <div class="content-container">
 
@@ -19,7 +19,7 @@
             <img src="<%= album.photo %>" alt="album-cover" class="img-fluid">
         </figure>
 
-        <section><p><strong>Description:</strong> <%= album.description %></p></section>
+        <section><p><%= album.description %></p></section>
        
 
         <div class="button-row">
@@ -33,7 +33,7 @@
 
     </div>
 
-    <%- include('./partials/footer.ejs') %>
+    <%- include('../partials/footer.ejs') %>
     
 </body>
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'Add An Album | Vapor Vault'}) %>
+    <link rel="stylesheet" href="/styles/album-form.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>Add An Album</h2>
+    </section>
+
+    <form method="POST" action="/albums">
+        <!-- Artist input -->
+        <label for="artist">Artist:</label>
+        <input type="text" id="artist" name="artist" required>
+        <br>
+      
+        <!-- Album input -->
+        <label for="album">Album:</label>
+        <input type="text" id="album" name="album" required>
+        <br>
+      
+        <!-- Release date input -->
+        <label for="releaseDate">Release Date:</label>
+        <input type="date" id="releaseDate" name="releaseDate" required>
+        <br>
+      
+        <!-- Where to listen input -->
+        <label for="whereToListen">Where To Listen:</label>
+        <input type="text" id="whereToListen" name="whereToListen">
+        <br>
+      
+        <!-- Photo input -->
+        <label for="photo">Photo URL:</label>
+        <input type="text" id="photo" name="photo" required>
+        <br>
+      
+        <!-- Description input -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+        <br>
+      
+        <!-- Submit button -->
+        <input type="submit" value="Add Album">
+      </form>
+      
+    <%- include('../partials/footer.ejs') %>
+    
+</body>
+
+</html>
