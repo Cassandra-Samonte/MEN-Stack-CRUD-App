@@ -12,7 +12,7 @@
 
     <section class="hero">
         <h2>Leave us your thoughts</h2>
-        <h4><a href="/albums/<%= album._id %>"><%= album.album %></a></h4>
+        <h4>You're writing a review for <a href="/albums/<%= album._id %>"><%= album.album %></a></h4>
     </section>
     <br><br>
     <form action="/reviews/create/<%= album._id %>" method="POST">

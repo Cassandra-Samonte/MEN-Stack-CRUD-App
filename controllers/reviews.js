@@ -26,9 +26,9 @@ router.get('/', (req, res) => {
         })
 });
 
-// New Route: GET localhost:3000/reviews/new/:rugId
+// New Route: GET localhost:3000/reviews/new/:albumId
 router.get('/new/:albumId', async (req, res) => {
-    const album = await db.Album.findById(req.params.rugId)
+    const album = await db.Album.findById(req.params.albumId)
     res.render('reviews/new-form', { album: album })
 })
 
@@ -44,17 +44,17 @@ router.post('/create/:albumId', (req, res) => {
 
 // Show Route: GET localhost:3000/reviews/:id
 router.get('/:id', (req, res) => {
-    console.log(req.params.id)
     db.Album.findOne(
         { 'reviews._id': req.params.id },
         { 'reviews.$': true, _id: false }
     )
-        .then(album => {
-            res.render('reviews/review-details',
-                { review: rug.reviews[0] }
-            )
-        })
+    .then(album => {
+        res.render('reviews/review-details', 
+            { review: album.reviews[0] }
+        )
+    })
 });
+
 
 // Destroy Route: DELETE localhost:3000/reviews/:id
 router.delete('/:id', (req, res) => {
