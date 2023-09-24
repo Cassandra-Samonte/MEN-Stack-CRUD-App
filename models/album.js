@@ -1,5 +1,6 @@
 // Require the Mongoose package
 const mongoose = require('mongoose');
+const reviewSchema = require('./reviews.js')
 
 // Create a schema to define the properties of the pets collection
 const albumSchema = new mongoose.Schema({
@@ -9,6 +10,7 @@ const albumSchema = new mongoose.Schema({
     whereToListen: { type: String },
     photo: { type: String, required: true },
     description: { type: String, required: true },
+    reviews: [reviewSchema]
 });
 
 // Export the schema as a Monogoose model. 
