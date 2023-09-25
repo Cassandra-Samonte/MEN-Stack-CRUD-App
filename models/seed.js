@@ -159,6 +159,38 @@ const albums = [
     photo: "/assets/images/album-covers/Eco-Virtual-Atmospheres.jpeg",
     description: "Eco Virtual is an anonymous vaporwave artist based in Canada, best known for their ATMOSPHERES series of albums. Eco Virtual's releases primarily revolve around an educational, weather-technology-based aesthetic, as self-branded 'Atmospheric Research & Analysis Music'. The identity of Eco Virtual is mostly kept vague, though a close association to the 'Hologram Bay' project has led some to believe it is a sister project of Blank Banshee, if not simply the result of a close friendship. With the release of ATMOSPHERES 第4, the artist has undergone an extended hiatus, though in 2017 a brief period of activity including tweets and a Facebook livestream occurred.",
     },
+    {
+    artist: "Windows96",
+    album: "Plume Valley",
+    releaseDate: new Date('2017-08-03'),
+    whereToListen: "https://windows96.bandcamp.com/album/plume-valley",
+    photo: "/assets/images/album-covers/windows96.jpeg",
+    description: "Windows 96 is an electronic music project by Brazilian composer and producer Gabriel Eduardo. Combining the sound of synth/vaporwave, psychedelic, VGM and more."
+    },
+    {
+    artist: "Telepath テレパシー能力者/Vaperror",
+    album: "テレヴァペ",
+    releaseDate: new Date('2016-10-03'),
+    whereToListen: "https://plus100.bandcamp.com/album/-",
+    photo: "/assets/images/album-covers/televape.jpeg",
+    description: "テレヴァペ is the combined efforts of electronic music producers VAPERROR and t e l e p a t h テレパシー能力者. They present to you 超越愛, a unique interpretation of ambient funk, jazz, and synth music driven by love.",
+    },
+    {
+    artist: "Haircuts For Men",
+    album: "nothing special, nothing wonderful",
+    releaseDate: new Date('2020-02-17'),
+    whereToListen: "https://haircutsformen.bandcamp.com/album/nothing-special-nothing-wonderful",
+    photo: "/assets/images/album-covers/haircuts-for-men.jpeg",
+    description: "The fundamentals—screeching saxes and looping, apathetic, and beat-driven funk riffs—are executed in great style here. Dreamy synth tones waver subtly below the surface of tracks, deepening their texture. Samples are selected and deployed well. The album keeps a bitter-sweet edge, rather than suffusing to sardonic, insufferable cynicism. Beats are littered with just enough frills, fills and flourishes to maintain interest for the duration of nothing special…. nothing special, nothing wonderful attempts to nullify its own existence with that title. There's nothing particularly groundbreaking or unfamiliar on the album. But if that's what you came to vaporwave for, maybe you're missing the point. As haircuts for men says, “everything is plundered.” But, as plundering goes, this is more of a casino heist than a drunken scrump.",
+    },
+    {
+    artist: "猫 シ Corp.",
+    album: "Palm Mall",
+    releaseDate: new Date('2014-10-02'),
+    whereToListen: "https://catsystemcorp.bandcamp.com/album/palm-mall",
+    photo: "/assets/images/album-covers/palm.jpeg",
+    description: "Palm Mall is the sixth studio album by Cat System Corp., the alias of Dutch electronic musician Jornt Elzinga. Released on 2 October 2014, its nine tracks use sample of elevator music to explore shopping malls. Following the success of Hiraeth (2014), Elzinga drew inspiration from the 'vaporwave vibe' he felt in the video game Grand Theft Auto V (2013), and produced Palm Mall as his first 'serious try' at a mallsoft release. It was a turning point for Elzinga's music and is his favorite release of the Cat System Corp. discography, featuring participation of several other vaporwave musicians.",
+    },
 ]
 
 // Export the seed data to `models/index.js`
