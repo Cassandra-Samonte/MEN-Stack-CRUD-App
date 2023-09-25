@@ -56,12 +56,6 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (min-width: 350px) {
-
-}
-
-
-
 @media screen and (min-width: 1024px) {
   .nav-link {
     font-size: 30px !important;
