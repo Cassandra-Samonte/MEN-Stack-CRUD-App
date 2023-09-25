@@ -7,34 +7,54 @@
 </head>
 
 <body>
+
     <%- include('../partials/nav.ejs') %>
+    
+    <div class="content-container container">
 
-    <div class="content-container">
-
-        <h2 class="album-name"><%= album.artist %></h2>
-        <h2 class="album-name"><%= album.album %></h2>
-        <h2 class="album-name"><%= album.releaseDate %></h2>
-
-        <figure class="featured-album">
-            <img src="<%= album.photo %>" alt="album-cover" class="img-fluid">
-        </figure>
-
-        <section><p><%= album.description %></p></section>
-       
-
+        <h1 class="responsive-header">Vapor Vault</h1>
+        
+        <div class="row">
+            <div class="col-md-6 col-12"> 
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="kungfont album-details"><%= album.artist %></h2>
+                        <h2 class="album-details"><%= album.album %></h2>
+                        <h2 class="release-date">Release Date: <%= album.releaseDate %></h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <figure class="featured-album">
+                            <img src="<%= album.photo %>" alt="album-cover" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="col-md-6 col-12"> 
+                <section><p><%= album.description %></p></section>
+            </div>
+        </div> 
+        
+        <div class="button-section">
         <div class="button-row">
-            <a class="btn" href="/albums/<%= album._id %>/edit">Edit</a><br>
-            <a class="btn" target="_blank" href="<%= album.whereToListen %>">Listen</a><br>
-            <a class="btn" href="/reviews/new/<%= album._id %>">Review</a>
+            <a href="/albums/<%= album._id %>/edit" class="btn">Edit</a>
+            <a target="_blank" href="<%= album.whereToListen %>" class="btn">Listen</a>
+            <a href="/reviews/new/<%= album._id %>" class="btn">Review</a>
             <form method="POST" action="/albums/<%= album._id %>?_method=DELETE">
                 <input class="btn" type="submit" value="Delete" />
-            </form>
+            </form>  
+        </div>  
         </div>
 
-    </div>
+    </div> 
 
     <%- include('../partials/footer.ejs') %>
     
 </body>
 
 </html>
+
+

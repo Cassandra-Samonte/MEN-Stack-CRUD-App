@@ -1,3 +1,7 @@
+* {
+  color: white;
+}
+
 @font-face {
   font-family: 'Planet Kosmos'; 
   src: url('/assets/fonts/planet-kosmos.TTF');
@@ -6,6 +10,10 @@
 @font-face {
   font-family: 'Krungthep'; 
   src: url(' /assets/fonts/Krungthep.ttf');
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1 {
@@ -52,9 +60,27 @@ h1 {
   justify-content: space-between !important;
 }
 
-body {
-  overflow-x: hidden;
+/* Footer Styles */
+.footer {
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+  text-align: center;
+  background-color: transparent;
 }
+
+
+.footerlink {
+  color: white;
+  font-family: 'Krungthep';
+  text-decoration: none; 
+  text-transform: uppercase; 
+  font-size: 18px;
+}
+
+.footerlink:hover {
+  opacity: 0.5; 
+} 
 
 @media screen and (min-width: 1024px) {
   .nav-link {
