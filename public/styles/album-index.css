@@ -169,24 +169,33 @@ body {
     }
 }
 
-@media screen and (min-width: 1023px)  {
+@media screen and (min-width: 990px)  {
     body {
         background-image: url('/assets/images/backgrounds/index.jpeg');
     }
-    
+
     .responsive-header {
         display: none;
     }
+}
 
-    /* Album Section Styles */
-    .hero {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin-bottom: 50px;
+@media screen and (min-width: 1024px)  {
+    .content-container {
+        padding: 20px 80px;
+        margin: 10px 40px;
     }
-    
+    .album-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1400px)  {
+    .content-container {
+        padding: 50px 200px;
+        margin: 10px 80px;
+    }
     .album-section {
         display: flex;
         justify-content: center;
