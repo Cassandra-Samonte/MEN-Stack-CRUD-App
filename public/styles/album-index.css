@@ -1,0 +1,95 @@
+body {
+    background-image: url('/assets/images/backgrounds/index.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    justify-content: center;
+}
+
+.featured-album {
+    position: relative;
+}
+
+.album-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.album-title {
+    color: white;
+    margin: 0;
+    font-family: 'Krungthep';
+    text-transform: uppercase; 
+    font-size: 14px;
+}
+
+.details-btn {
+    background-color: transparent; 
+    color: white; 
+    text-decoration: none; 
+    font-family: 'Krungthep';
+    text-transform: uppercase; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.details-btn:hover {
+    opacity: 0.3; 
+}
+
+.featured-album:hover .album-image {
+    opacity: 0.2; 
+}
+
+.featured-album:hover .details {
+    opacity: 1; 
+}
+
+/* Album Section Styles */
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 50px;
+}
+
+.album-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Styles */
+.footer {
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center;
+    background-color: transparent;
+}
+
+
+.footerlink {
+    color: white;
+    font-family: 'Krungthep';
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 22px;
+}
+
+.footerlink:hover {
+    opacity: 0.5; 
+} 

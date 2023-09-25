@@ -7,31 +7,30 @@
 </head>
 
 <body>
-    <%- include('../partials/nav.ejs') %>
-
-    <div class="content-container">
-        <main>
-            <div class="row">
-                <% for (let album of albums) { %>
     
-                    <figure class="featured-album">
-                        <img src="<%= album.photo %>" alt="album-cover" class="img-fluid">
-                        <div class="details">
-                            <h3><%= album.album %></h3>
-                            <a href="/albums/<%= album._id %>" class="btn">Details</a>
-                        </div>
-                    </figure>            
+    <%- include('../partials/nav.ejs') %>
+        <div class="hero"
+            <div class="album-section">
+                <div class="content-container">
+                    <div class="row">
+                        <% for (let album of albums) { %>
+                            <div class="col-lg-2 col-md-4 col-6">
+                                <figure class="featured-album">
+                                    <img src="<%= album.photo %>" alt="album-cover" class="img-fluid album-image">
+                                    <div class="details">
+                                        <h3 class="album-title"><%= album.album %></h3>
+                                        <a href="/albums/<%= album._id %>" class="details-btn">Details</a>
+                                    </div>
+                                </figure>            
+                            </div>
+                        <% } %>
+                    </div>
                 </div>
-                <% } %>
             </div>
-        </main>
-    </div>        
-
- 
-        
-    </main>
-
+        </div>
+    
     <%- include('../partials/footer.ejs') %>
+    </main>
 </body>
 
 </html>

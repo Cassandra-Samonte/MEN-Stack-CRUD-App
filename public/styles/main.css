@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Planet Kosmos'; 
-    src: url('/assets/fonts/planet-kosmos.TTF');
-  }
+  font-family: 'Planet Kosmos'; 
+  src: url('/assets/fonts/planet-kosmos.TTF');
+}
 
-  @font-face {
-    font-family: 'Krungthep'; 
-    src: url(' /assets/fonts/Krungthep.ttf');
-  }
+@font-face {
+  font-family: 'Krungthep'; 
+  src: url(' /assets/fonts/Krungthep.ttf');
+}
 
 h1 {
     font-family: 'Planet Kosmos';
@@ -30,5 +30,47 @@ h1 {
 }
 
 .button:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
+
+/* Navbar Styles */
+.nav-link {
+  font-family: 'Planet Kosmos';
+  color: white !important;
+  font-size: 30px !important;
+}
+.nav-link:hover {
+  opacity: 0.5;
+}
+
+.transparentNav {
+  background-color: transparent; 
+}
+
+.myNav {
+  width: 100%;
+  justify-content: space-between !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 350px) {
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  .nav-link {
+    font-size: 30px !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-link {
+    font-size: 40px !important;
+  }
+}
+
