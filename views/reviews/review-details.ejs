@@ -8,43 +8,26 @@
 
 <body>
     <%- include('../partials/nav.ejs') %>
-    <br><br><br>
-    <section class="hero">
-        <h1>Name: <%= review.reviewer %></h1>
-        <table>
-            <tr>
-                <th>
-                    <h2>Title:</h2>
-                </th>
-                <td>
-                    <h2><%= review.title %></h2>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <h2>Content:</h2>
-                </th>
-                <td>
-                    <h2><%= review.content %></h2>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <h2>Date submitted:</h2>
-                </th>
-                <td>
-                    <h2><%= review.reviewDate.toLocaleDateString() %></h2>
-                </td>
-            </tr>
-        </table>
 
+    <section>
+        <div class="card">
+            <div class="inputGroup">
+              <div class="input"> 
+                <h1 class="kungfont">Name: <%= review.reviewer %></h1>             
+                <h2>Title: <%= review.title %></h2>
+                  <h3>Content: <%= review.content %></h2>
+                  <h3>Date submitted: <%= review.reviewDate.toLocaleDateString() %></h2>
+              </div>
+            </div>
+          </div>
+          
         <form method="POST" action="/reviews/<%= review._id %>?_method=DELETE">
-            <input class="btn" type="submit" value="Delete" />
+            <input class="Btn" type="submit" value="Delete" />
         </form>
-
     </section>
-    <br><br><br>
+
     <%- include('../partials/footer.ejs') %>
+
 </body>
 
 </html>
