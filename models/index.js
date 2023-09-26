@@ -13,6 +13,5 @@ db.on('connected', function () {
 // Export models and seed data to `server.js`
 module.exports = {
     Album: require('./album'),
-    seedAlbums: require('./seed')
+    seedAlbums: require('./seed').albums 
 }
-

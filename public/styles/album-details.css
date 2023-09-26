@@ -13,6 +13,10 @@ body {
     text-align: center;
 }
 
+.album-name {
+    font-size: 12px;
+}
+
 .release-date {
     font-size: 10px;
     text-transform: uppercase;

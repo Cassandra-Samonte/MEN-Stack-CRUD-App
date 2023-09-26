@@ -33,6 +33,7 @@ body {
     letter-spacing: 0.8px;
     color: rgb(19, 19, 19);
     font-size: 13.4px;
+    text-transform: uppercase;
 }
   
 .inputGroup {

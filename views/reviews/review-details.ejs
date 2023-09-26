@@ -13,10 +13,11 @@
         <div class="card">
             <div class="inputGroup">
               <div class="input"> 
-                <h1 class="kungfont">Name: <%= review.reviewer %></h1>             
-                <h2>Title: <%= review.title %></h2>
-                  <h3>Content: <%= review.content %></h2>
-                  <h3>Date submitted: <%= review.reviewDate.toLocaleDateString() %></h2>
+                <h2>Name: <%= review.name %></h2>     
+                <h2>Album: <%= review.album %></h2>             
+                <h2><%= review.title %></h2>
+                <h3><%= review.content %></h2><br>
+                <h3>Date submitted: <%= review.reviewDate.toLocaleDateString() %></h2>
               </div>
             </div>
           </div>

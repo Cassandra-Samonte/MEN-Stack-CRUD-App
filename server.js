@@ -72,14 +72,14 @@ app.get('/seed', function (req, res) {
     // Remove any existing albums from the database
     db.Album.deleteMany({})
         .then(removedAlbums => {
-            console.log(`Removed ${removedAlbums.deletedCount} albums from the collection`)
+            console.log(`Removed ${removedAlbums.deletedCount} albums from the collection`);
             // Seed the albums collection with the seed data
             db.Album.insertMany(db.seedAlbums)
                 .then(addedAlbums => {
-                    console.log(`Added ${addedAlbums.length} albums to the collection`)
-                    res.json(addedAlbums)
+                    console.log(`Added ${addedAlbums.length} albums to the collection`);
+                    res.json(addedAlbums);
                 })
-        })
+            })
 });
 
 
