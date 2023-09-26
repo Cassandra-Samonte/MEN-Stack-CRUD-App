@@ -12,6 +12,7 @@
     <section>
         <h2 class="planetfont">Add An Album</h2>
     </section>
+    
     <div class="content">
         <form method="POST" action="/albums">
             <div class="inputGroup">
@@ -40,9 +41,9 @@
                     <input placeholder="Description..." id="description" class="input description" name="description" type="text">
                 </div>
             </div>
+            <!-- Submit button -->
+            <input class="Btn" type="submit" value="Submit">
         </form>
-          <!-- Submit button -->
-          <button class="Btn" input type="submit" value="Add Album">Submit</button>
     </div>
 
     <%- include('../partials/footer.ejs') %>

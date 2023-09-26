@@ -19,8 +19,8 @@ const albumSchema = new mongoose.Schema({
         }
     },
     whereToListen: { type: String },
-    photo: { type: String, required: true },
-    description: { type: String, required: true },
+    photo: { type: String },
+    description: { type: String },
     reviews: [reviewSchema]
 });
 
