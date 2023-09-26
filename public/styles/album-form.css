@@ -1,8 +1,152 @@
 body {
-    background-image: url('/assets/images/backgrounds/form.jpeg');
+    background-image: url('/assets/images/backgrounds/mobile-index.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
+}
+
+/* Input code from https://uiverse.io/vinodjangid07/modern-tiger-48 */
+.InputContainer {
+    width: 280px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(227, 213, 255), rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+  
+.input {
+    width: 270px;
+    height: 50px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+}
+  
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(227, 213, 255), rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.9);  
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: white;
+    font-size: 13.4px;
+    margin-top: 10px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 390px) and (max-width: 415px) {
+    section {
+        margin-top: 50px;
+    }
+    .content {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 915px){
+    body {
+        background-image: url('/assets/images/backgrounds/ipad-index.png');
+    }
+    .InputContainer {
+        width: 500px;
+        height: 80px;
+    }
+    .input {
+        width: 490px;
+        height: 70px;
+    }
+    section {
+        margin-top: 60px;
+    }
+    .content {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px)  {
+    body {
+        background-image: url('/assets/images/backgrounds/index.jpeg');
+    }
+    .InputContainer {
+        width: 400px;
+        height: 50px;
+    }
+    .input {
+        width: 390px;
+        height: 40px;
+    }
+    .inputGroup {
+        gap: 10px;
+    }
+    .Btn {
+        margin-top: 10px; 
+        width: 200px;
+    }
+    .content {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 1280px)  {
+    section {
+        margin-top: 40px;
+    }
+    .content {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 1400px)  {
+    section {
+        margin-top: 100px;
+    }
+    .content {
+        margin-top: 70px;
+    }
 }
