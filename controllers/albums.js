@@ -39,7 +39,6 @@ router.post('/', (req, res) => {
         .then(album => res.redirect('/albums/' + album._id))
 })
 
-
 // Show Route (GET/Read): Will display an individual album document
 router.get('/:id', function (req, res) {
     db.Album.findById(req.params.id)
