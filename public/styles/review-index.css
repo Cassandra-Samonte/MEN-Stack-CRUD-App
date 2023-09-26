@@ -15,34 +15,28 @@ h1 {
     color: white;
 }
 
-/* Card and button styles from https://uiverse.io/vinodjangid07/modern-tiger-48 */
+/* Card and button styles from https://uiverse.io/vinodjangid07/modern-tiger-48 
+Altered card styles to match my site theme*/
 .card {
-    width: 300px;
+    width: 200px;
     height: 200px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, rgb(227, 213, 255), rgb(255, 231, 231));
-    border-radius: 30px;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.9);  
+    flex-direction: column; 
+    justify-content: space-between; 
+    background-color: rgba(255, 255, 255, 0.5); 
     border: none;
-    outline: none;
-    caret-color: rgb(255, 81, 0);
-    background-color: rgb(255, 255, 255);
-    padding-left: 15px;
-    letter-spacing: 0.8px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.9);
     color: white;
-    margin-top: 10px; 
-    margin-left: auto; 
-    margin-right: auto;
-    text-align: center; 
+    padding: 10px;
+    margin: 10px auto; 
+    text-align: justify; 
+    text-justify: inter-word;
 }
 
 .Btn {
-    width: 200px;
-    height: 50px;
+    width: 140px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,6 +56,8 @@ h1 {
     margin-top: 10px; 
     margin-left: auto; 
     margin-right: auto;
+    text-align: center; 
+    
 }
 
 .inputGroup {
@@ -104,4 +100,8 @@ section {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }

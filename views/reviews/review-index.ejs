@@ -15,10 +15,11 @@
         <section class="container">
             <div class="row"> 
                 <% for (let review of reviews) { %>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <div class="card">
-                            <h4><%= review.reviewer %> - <%= review.title %></h4>
-                            <p>Created: <%= review.reviewDate %></p>
+                            <p><%= review.reviewer %><br>
+                            <%= review.title %><br>
+                            <%= review.content %></p>
                             <a class="Btn" href="/reviews/<%= review._id %>">Read More</a>
                         </div>
                     </div>
