@@ -9,47 +9,43 @@
 <body>
     <%- include('../partials/nav.ejs') %>
 
-    <section class="hero">
-        <h2>Edit an Album</h2>
+
+    <section>
+        <h2 class="planetfont">Edit <%= album.album %> </h2>
     </section>
-
-        <form method="POST" action="/pets/<%= album._id %>?_method=PUT">
-            <!-- Artist input -->
-            <label for="artist">Artist:</label>
-            <input type="text" id="artist" name="artist" value="<%= album.artist %>" required>
-            <br>
-          
-            <!-- Album input -->
-            <label for="album">Album:</label>
-            <input type="text" id="album" name="album" value="<%= album.album %>" required>
-            <br>
-          
-            <!-- Release date input -->
-            <label for="releaseDate">Release Date:</label>
-            <input type="date" id="releaseDate" name="releaseDate" value="<%= album.releaseDate %>" required>
-            <br>
-          
-            <!-- Where to listen input -->
-            <label for="whereToListen">Where To Listen:</label>
-            <input type="text" id="whereToListen" name="whereToListen" value="<%= album.whereToListen %>">
-            <br>
-          
-            <!-- Photo input -->
-            <label for="photo">Photo URL:</label>
-            <input type="text" id="photo" name="photo" value="<%= album.photo %>" required>
-            <br>
-          
-            <!-- Description input -->
-            <label for="description">Description:</label>
-            <textarea id="description" name="description" value="<%= album.description %>" required></textarea>
-            <br>
-          
+    
+    <div class="content">
+        <form method="POST" action="/albums/<%= album._id %>?_method=PUT">
+            <div class="inputGroup">
+                <!-- Artist input -->
+                <div class="InputContainer">
+                    <input placeholder="<%= album.artist %>" id="artist" class="input" name="artist" type="text">
+                </div>
+                <!-- Album input -->
+                <div class="InputContainer">
+                    <input placeholder="<%= album.album %>" id="album" class="input" name="album" type="text">
+                </div>
+                <!-- Release date input -->
+                <div class="InputContainer">
+                    <input placeholder="<%= album.releaseDate %>" id="releaseDate" class="input" name="releaseDate" type="date">
+                </div>
+                <!-- Where to listen input -->
+                <div class="InputContainer">
+                    <input placeholder="<%= album.whereToListen %>" id="whereToListen" class="input" name="whereToListen" type="text">
+                </div>
+                <!-- Photo input -->
+                <div class="InputContainer">
+                    <input placeholder="<%= album.photo %>" id="photo" class="input" name="photo" type="text">
+                </div>
+                <!-- Description input -->
+                <div class="InputContainer">
+                    <input placeholder="<%= album.description %>" id="description" class="input" name="description" type="text">
+                </div>
+            </div>
             <!-- Submit button -->
-            <input type="submit" value="Edit Album">
-
+            <input class="Btn" type="submit" value="Submit">
         </form>
-
-
+    </div>
 
     <%- include('../partials/footer.ejs') %>
 
