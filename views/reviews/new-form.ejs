@@ -10,23 +10,31 @@
     
     <%- include('../partials/nav.ejs') %>
 
-    <section class="hero">
-        <h2>Leave us your thoughts</h2>
-        <h4>You're writing a review for <a href="/albums/<%= album._id %>"><%= album.album %></a></h4>
+    <section>
+        <h2 class="planetfont">Leave us your thoughts</h2>
+        <h4 class="kungfont">You're writing a review for <a href="/albums/<%= album._id %>"><%= album.album %></a></h4>
     </section>
-    <br><br>
-    <form action="/reviews/create/<%= album._id %>" method="POST">
-        <label for="reviewer">Name:</label><br>
-        <input type="text" id="reviewer" name="reviewer" required><br>
 
-        <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title" required><br>
-
-        <label for="content">Content:</label><br>
-        <input type="text" id="content" name="content" required><br>
-
-        <input type="submit" value="Submit">
-    </form>
+    <div class="content">
+        <form action="/reviews/create/<%= album._id %>" method="POST">
+            <div class="inputGroup">
+                <!-- Name input -->
+                <div class="InputContainer">
+                    <input placeholder="Name..." id="reviewer" class="input" name="reviewer" type="text" required>
+                </div>
+                <!-- Title input -->
+                <div class="InputContainer">
+                    <input placeholder="Title..." id="title" class="input" name="title" type="text" required>
+                </div>
+                <!-- Content input -->
+                <div class="InputContainer">
+                    <input placeholder="Content..." id="content" class="input" name="content" type="text" required>
+                </div>
+                <!-- Submit button -->
+                <input class="Btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 
     <%- include('../partials/footer.ejs') %>
     

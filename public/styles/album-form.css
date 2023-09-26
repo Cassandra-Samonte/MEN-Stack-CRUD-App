@@ -80,6 +80,19 @@ section {
     align-items: center;
 }
 
+.kungfont {
+    text-transform: upppercase;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: .4;
+}
+
 @media screen and (min-width: 390px) and (max-width: 415px) {
     section {
         margin-top: 50px;
