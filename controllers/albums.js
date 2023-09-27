@@ -1,6 +1,5 @@
 // All routes on this page are prefixed with `localhost:3000/albums`
 
-
 /* Require modules
 --------------------------------------------------------------- */
 const express = require('express')

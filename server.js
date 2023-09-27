@@ -18,7 +18,6 @@ const albumsCtrl = require('./controllers/albums')
 const reviewsCtrl = require('./controllers/reviews')
 
 
-
 /* Create the Express app
 --------------------------------------------------------------- */
 const app = express();
@@ -78,7 +77,7 @@ app.get('/seed', async function (req, res) {
     } catch (error) {
         res.status(500).json(error)
     }
-});
+})
 
 
 // This tells our app to look at the `controllers/albums.js` file 
@@ -86,7 +85,6 @@ app.get('/seed', async function (req, res) {
 app.use('/albums', albumsCtrl)
 // This tells our app to look at the `controllers/reviews.js` file 
 app.use('/reviews', reviewsCtrl)
-
 
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes

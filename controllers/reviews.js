@@ -1,3 +1,5 @@
+// All routes on this page are prefixed with `localhost:3000/reviews`
+
 /* Require modules
 --------------------------------------------------------------- */
 const express = require('express')
@@ -22,7 +24,8 @@ router.get('/', async (req, res) => {
     }
 });
 
-// Index Route (All Reviews): 
+
+// Index Route (All Reviews) - Need '/review-index' to access show route 
 router.get('/review-index', async (req, res) => {
     try {
         const reviews = await db.Review.find({})
@@ -45,7 +48,6 @@ router.get('/new/:albumId', async (req, res) => {
 router.post('/create/:albumId', async (req, res) => {
     try {
         const newReview = await db.Review.create(req.body);
-        console.log(newReview);
         const album = await db.Album.findById(req.params.albumId);
         album.reviews.push(newReview._id);
         await album.save();
@@ -60,28 +62,19 @@ router.post('/create/:albumId', async (req, res) => {
 
 // Show Route: GET localhost:3000/reviews/:id
 router.get('/:id', (req, res) => {
-    console.log("Requested Review ID:", req.params.id);  
 
     db.Review.findOne({ _id: req.params.id })
     .then(review => {
-        console.log("Fetched Review:", review);  
-        if (!review) {
-            res.send("Review not found");
-        } else {
-            res.render('reviews/review-details', { review: review });
-        }
+        res.render('reviews/review-details', { review: review });
     })
-    .catch(err => {
-        console.error(err);
-        res.send("An error occurred");
-    });
+
 });
 
 
 // Destroy Route: DELETE localhost:3000/reviews/:id
 router.delete('/:id', async (req, res) => {
-    try {
         const reviewId = req.params.id;
+        
         await db.Review.findByIdAndDelete(reviewId);
    
         await db.Album.updateMany(
@@ -90,9 +83,6 @@ router.delete('/:id', async (req, res) => {
         );
         
         res.redirect('/reviews');
-    } catch (error) {
-
-    }
 });
 
 
