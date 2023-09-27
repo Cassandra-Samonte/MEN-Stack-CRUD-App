@@ -68,23 +68,16 @@ app.get('/about', function (req, res) {
 
 
 /* Seed Route - When a GET request is sent to `/seed`, the albums collection is seeded */
-app.get('/seed', function (req, res) {
-    // Delete all albums
-    db.Album.deleteMany({})
-        .then(removedAlbums => {
-            console.log(`Removed ${removedAlbums.deletedCount} albums from the collection`);
-            
-            // Seed albums 
-            return db.Album.insertMany(db.seedData.albums);
-        })
-    // Delete all reviews
-    db.Review.deleteMany({})
-        .then(removedReviews => {
-            console.log(`Removed ${removedReviews.deletedCount} reviews`);
-            
-            // Seed reviews
-            return db.Review.insertMany(db.seedData.reviews);
-        })
+app.get('/seed', async function (req, res) {
+    try {
+        await db.Album.deleteMany({}); 
+        await db.Review.deleteMany({});
+        const albums = await db.Album.insertMany(db.seedData.albums);
+        const reviews = await db.Review.insertMany(db.seedData.reviews);
+        res.status(200).json({ message:`Added ${albums.length} albums and ${reviews.length} reviews to the database` })
+    } catch (error) {
+        res.status(500).json(error)
+    }
 });
 
 

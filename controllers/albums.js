@@ -70,7 +70,7 @@ router.put('/:id', (req, res) => {
         req.body,
         { new: true }
     )
-    .then(album => res.redirect('/album/' + album._id))
+    .then(album => res.redirect('/albums/' + album._id))
 });
 
 

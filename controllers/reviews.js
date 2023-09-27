@@ -13,17 +13,13 @@ const db = require('../models')
 /* Routes
 --------------------------------------------------------------- */
 // Index Route (All Reviews): 
-router.get('/', (req, res) => {
-    db.Album.find({}, { reviews: true, _id: false })
-        .then(albums => {
-            const flatList = []
-            for (let album of albums) {
-                flatList.push(...album.reviews)
-            }
-            res.render('reviews/review-index',
-                { reviews: flatList }
-            )
-        })
+router.get('/', async (req, res) => {
+    try {
+        const reviews = await db.Review.find({})
+        res.status(200).render('reviews/review-index', { reviews: reviews })
+    } catch (error) {
+        
+    }
 });
 
 // New Route: GET localhost:3000/reviews/new/:albumId
@@ -34,23 +30,22 @@ router.get('/new/:albumId', async (req, res) => {
 
 // Create Route: POST localhost:3000/reviews/
 router.post('/create/:albumId', (req, res) => {
-    db.Album.findByIdAndUpdate(
-        req.params.albumId,
+    db.Review.findByIdAndUpdate(
+        req.params.reviewId,
         { $push: { reviews: req.body } },
         { new: true }
     )
-        .then(album => res.redirect('/reviews/'))
+        .then(album => res.redirect('/reviews/review-index'))
 });
 
 // Show Route: GET localhost:3000/reviews/:id
 router.get('/:id', (req, res) => {
-    db.Album.findOne(
-        { 'reviews._id': req.params.id },
-        { 'reviews.$': true, _id: false }
+    db.Review.findOne(
+       { _id:req.params.id }
     )
-    .then(album => {
+    .then( review => {
         res.render('reviews/review-details', 
-            { review: album.reviews[0] }
+            { review: review }
         )
     })
 });
