@@ -14,10 +14,11 @@
             <div class="inputGroup">
               <div class="input"> 
                 <h2>Name: <%= review.name %></h2>     
-                <h2>Album: <%= review.album %></h2>             
-                <h2><%= review.title %></h2>
-                <h3><%= review.content %></h2><br>
-                <h3>Date submitted: <%= review.reviewDate.toLocaleDateString() %></h2>
+                <h2>Album: <%= review.album %></h2><br>             
+                <h2><%= review.title %></h2><br>
+                <h3><%= review.content %></h3><br>
+                <h3>Date submitted: <%= review.reviewDate %></h3><br>
+                <h4 class="kungfont"><a target="_blank" href="<%= review.reviewLink %>" class="btn">Read the full review here</a></h4>
               </div>
             </div>
           </div>

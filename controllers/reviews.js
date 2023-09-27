@@ -40,6 +40,7 @@ router.get('/new/:albumId', async (req, res) => {
     res.render('reviews/new-form', { album: album })
 })
 
+
 // Create Route: POST localhost:3000/reviews/
 router.post('/create/:albumId', async (req, res) => {
     try {
@@ -75,7 +76,6 @@ router.get('/:id', (req, res) => {
         res.send("An error occurred");
     });
 });
-
 
 
 // Destroy Route: DELETE localhost:3000/reviews/:id
