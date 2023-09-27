@@ -29,6 +29,7 @@ p {
 
 .kungfont {
     text-transform: uppercase;
+    color: gray;
 }
 
 ul {
@@ -101,3 +102,4 @@ section {
 .container {
     padding: 20px 115px;
 }
+

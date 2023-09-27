@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 const reviewSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  album: { type: String, required: true },
-  title: { type: String, required: true },
-  content: { type: String, required: true },
+  name: { type: String },
+  album: { type: String },
+  title: { type: String },
+  content: { type: String },
   reviewDate: { type: Date, default: Date.now },
-  reviewLink: { type: String, required: true },
+  reviewLink: { type: String },
   albumId: { type: mongoose.Schema.Types.ObjectId, ref: 'Album' }
 });
 
