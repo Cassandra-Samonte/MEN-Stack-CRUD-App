@@ -69,17 +69,22 @@ app.get('/about', function (req, res) {
 
 /* Seed Route - When a GET request is sent to `/seed`, the albums collection is seeded */
 app.get('/seed', function (req, res) {
-    // Remove any existing albums from the database
+    // Delete all albums
     db.Album.deleteMany({})
         .then(removedAlbums => {
             console.log(`Removed ${removedAlbums.deletedCount} albums from the collection`);
-            // Seed the albums collection with the seed data
-            db.Album.insertMany(db.seedAlbums)
-                .then(addedAlbums => {
-                    console.log(`Added ${addedAlbums.length} albums to the collection`);
-                    res.json(addedAlbums);
-                })
-            })
+            
+            // Seed albums 
+            return db.Album.insertMany(db.seedData.albums);
+        })
+    // Delete all reviews
+    db.Review.deleteMany({})
+        .then(removedReviews => {
+            console.log(`Removed ${removedReviews.deletedCount} reviews`);
+            
+            // Seed reviews
+            return db.Review.insertMany(db.seedData.reviews);
+        })
 });
 
 

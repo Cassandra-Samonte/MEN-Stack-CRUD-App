@@ -201,7 +201,8 @@ const reviews = [
         content: "The album is a jaw-dropping ambient record which feels almost indescribable. As weird as it sounds to say for a record I am praising, this album usually makes me sleep and in a good way. This is one of those albums all often play while going to bed and it really does help put me in a peaceful state. This whole projects just feels so reflective, almost like looking out of the window on its album art and just admiring the beauty that life has to offer.",
         reviewDate: new Date('2019-07-08'),   
         reviewLink: "https://www.albumoftheyear.org/user/minatoarisato/album/38707-%E6%96%B0%E3%81%97%E3%81%84%E6%97%A5%E3%81%AE%E8%AA%95%E7%94%9F/",
-        },
+        albumId: "65136ba77159143eda69b1d5",    
+    },
      {
         name: "little treasures",
         album: "200% Electronica",
@@ -209,7 +210,8 @@ const reviews = [
         content: "It has such a distinct and unique vibe, and was a perfect accompaniment to the particular time of my life I was introduced to it. It was the perpetual soundtrack for my days in the pandemic with a newborn daughter, rocking her to sleep and getting lost in a game of chess. The second 'Secret' comes on, with its twinkling plucks and sub bass intro, I'm back in that rocking chair holding my baby and looking in her eyes. It's a psychedelic record, and having your first child is a psychedelic experience in and of itself, so I'm not sure it's that weird of a connection, but hey who knows. That's almost certainly not everyone's experience of this record, but I'd venture to guess that anyone who gives this album the time to soundtrack a portion of their life will find the value in it. These songs have such a nostalgic, dreamy ambiance, and provide a sense of space and vastness. Perfect for driving through a part of town you haven't been by in years, slowly rolling as the sunsets.",
         reviewDate: new Date('2023-08-02'),   
         reviewLink: "https://rateyourmusic.com/release/album/esprit-%E7%A9%BA%E6%83%B3/200-electronica-1/",
-        },
+        albumId: "65136ba77159143eda69b1d6",
+    },
     {
         name: "Modrigue",
         album: "Digital - Dance",
@@ -217,6 +219,7 @@ const reviews = [
         content: "The line up grows, evolves and moves away from their hypnotic robotic sounds of their debut. They soften their music by widening their instrumental palette: bells, saxophone and an electric guitar very reminiscent of Edgar Froese's playing on the TANGERINE DREAM albums 'Force Majeure' and 'Tangram'. 'Digital-Dance' is overall very relaxing and alternates floating pieces ('Magnificient-Shore'), atmospheric tunes ('Island Sunrise', 'Sea-Gulls-Audience') and for sure synthetic tracks ('Oceans-Breath', 'Digital-Dance') with odd passages ('Waving-Voices'). Soundscapes are very reminiscent of the electronic German pioneers' music in the middle of the 80's. A trippy record in the vein of PINK FLOYD, TANGERINE DREAM and KLAUS SCHULZE. Unfortunately, the last truly good SOFTWARE studio album, before they turn new-age...",
         reviewDate: new Date('2007-01-29'),   
         reviewLink: "https://www.progarchives.com/album.asp?id=13387",
+        albumId: "65136ba77159143eda69b1d8",
         },
     {
         name: "blender715",
@@ -225,6 +228,7 @@ const reviews = [
         content: "Floating endlessly above a poorly rendered mid-2000s CGI landscape. Your flesh, over the course of decades, pixelating and taking on the blocky look of a 64-bit human. Each pleasant exhale letting loose years of trauma, each inhale taking you deeper into your next life as a liminal space.",
         reviewDate: new Date('2021-11-23'),   
         reviewLink: "https://rateyourmusic.com/release/album/desert-sand-feels-warm-at-night/%E6%96%B0%E4%B8%96%E7%95%8C%E3%81%AE%E5%BC%9F%E5%AD%90%E3%81%9F%E3%81%A1-new-world-disciples/",
+        albumId: "65136ba77159143eda69b1d9",
         },
     {
         name: "roomba33",
@@ -233,6 +237,7 @@ const reviews = [
         content: "A cornerstone in the history of vaporwave genre. Often imitated, frequently reference, greatly polarizing. Floral Shoppe at times feels like the culmination of everything that had come before, and yet still retain its sense of identity in all its influence. There's this constant clash of nostalgic and foreign sound.",
         reviewDate: new Date('2023-05-24'),   
         reviewLink: "https://rateyourmusic.com/release/album/macintosh-plus/floral-shoppe/reviews/1/",
+        albumId: "65136ba77159143eda69b1da",
         },
      {
         name: "bedroomAOR",
@@ -241,6 +246,7 @@ const reviews = [
         content: "The Vaporwave Hall of Fame would have at least a hundred artists adorning its halls and as you go deeper into the complex, you find the monolith discography possessors. I won't namedrop a whole bunch because I do that in the other reviews plenty, you get where I'm going with this in that 猫 シ Corp. would have quite the square footage reserved in that section. I don't even remember what my first album of his was at this point, that's how eternal to my collection and my knowing of vapor this guy is. What I do know is that he's the only renowned vaper in all The Netherlands, and be it his unique Dutch perspective on the whole matter or merely a wildly keen taste in the sample source material already, 猫 シ Corp. brings his A-game every time. Class of '84 was one to make a big splash and I think out of due credit: he mingles with the other megas, like waterfront dining (oh! Here I go namedropping!) for a refreshing take on old hit 'Rock Wit'cha', and a flowing tumble of satin down one's thighs to the Luxury Elite tinged 'The Dress'.",
         reviewDate: new Date('2016-07-15'),   
         reviewLink: "https://rateyourmusic.com/release/album/%E7%8C%AB-%E3%82%B7-corp/class-of-84/",
+        albumId: "65136ba77159143eda69b1db",
         },
     {
         name: "ST4T1C",
@@ -249,6 +255,7 @@ const reviews = [
         content: "'Mana Pool', with its smooth and buttery beats, is a breath of fresh air within the vaporwave scene (at least based on what I've heard) and while I wish it was longer than 9 tracks, is honestly an amazing effort for the genre. I really like the aquatic chill vibe the beats here have, and even the more boring tracks still slapped in some way. While I really enjoyed this project, I still do wish it was atleast a little bit longer, or at least had more cuts on here. But overall, a damn good effort.",
         reviewDate: new Date('2020-11-15'),   
         reviewLink: "https://www.albumoftheyear.org/user/st4t1c/album/78726-mana-pool/",
+        albumId: "65136ba77159143eda69b1dc",
         },
     {
         name: "duncanreviews",
@@ -257,6 +264,7 @@ const reviews = [
         content: "Yes! We're Open is set in a not-so-distant future, settling comfortably in the realms of a reality in which humans have finally embarked on their great exodus to the stars and beyond. A fulfilled destiny that sees this ever-enterprising population of billions evolving from their once-crowded settlements to create brand-new colonies and economies across a thousand solar systems. But while these countless townships and ethnicities have departed their former homeworld, many of these adventurous and creative individuals have not lost sight of where they came from and what defines their memories of a childhood back on Earth.",
         reviewDate: new Date('2021-07-19'),   
         reviewLink: "https://rateyourmusic.com/release/album/%EC%8B%9D%EB%A3%8C%ED%92%88groceries/%EC%8A%88%ED%8D%BC%EB%A7%88%EC%BC%93yes-were-open/",
+        albumId: "65136ba77159143eda69b1dd",
         },
     {
         name: "psychedelicj",
@@ -265,6 +273,7 @@ const reviews = [
         content: "The rhythms and melodies are repetitive, but they're so good that it doesn't matter. It's an album to get lost in — to visualize your “deep fantasy”. It's wonderful and nostalgic and groovy and cozy, and I listen to it a lot these days. To think I didn't get this at first…",
         reviewDate: new Date('2023-08-21'),   
         reviewLink: "https://www.albumoftheyear.org/user/psychedelicj/album/105553-deep-fantasy/",
+        albumId: "65136ba77159143eda69b1de",
         },
      {
         name: "local eurobeat enthusiast",
@@ -273,6 +282,7 @@ const reviews = [
         content: "'virtua.zip' blends seapunk and vaporwave, as well as adding a lot of original compositions alongside the samples. The tracks are essentially simple, improvised ideas extended and repeated for around 1-2 minutes, keeping you in a sea of vibez all the way through (hopefully), with all sorts of pads and effects (did I mention the production was grandiose?). Usually I dislike it a whole lot when I can recognize the sample; however, ESPRIT is able to utilize his samples in a manner that's natural and authentic. This can be seen on 'Iwillbe.wav', which features MegaMan samples combined with tropical-sounding synths/melodic percussion. Another quality this album has is that it consistently delivers drowsy, sugary, but also soothing and infectious atmospheres to trap you in a constant repeat cycle. 'Slowjet.wav' and 'Peter.wav' are possibly the best examples of this, the former featuring a smooth-but-punchy bass line, and the latter a simple but cool beat grooving under straightforward synths plus a catchy vocal hook.",
         reviewDate: new Date('2020-11-20'),   
         reviewLink: "https://www.sputnikmusic.com/review/82487/ESPRIT-virtua.zip/",
+        albumId: "65136ba77159143eda69b1df",
         },
     {
         name: "beefant",
@@ -281,6 +291,7 @@ const reviews = [
         content: "I just downloaded this album onto my phone and starting playing it as I walked down the seemingly deserted streets of Center City. I felt mellow as the puffy flakes fell upon my lashes, but as the album progressed, I began to feel invigorated and energized. It turns out that Late Night Delight was the pleasure I needed to indulge in this Tuesday morning. I listened to the album more than eight times over throughout Tuesday. Whether I was in the dining hall, in class, or just shuffling down the snow-dusted sidewalks, I found that this album was perfect for any time of the day. The first half of the album is produced by Luxury Elite, an artist that I have been following devoutly for a few months now (Lux's Twitter feed is a great treat!), as I will be reviewing two more of their tapes within the upcoming write-ups. LND opens with “All Night”, a song that makes you feel that you are just tuning into a radio station in the later hours of the evening. Lux’s tunes give off soulful and chill vibes, and reminds me of the instance in which I took a Lyft in the pitch-dark after seeing Hail, Caesar! and the driver had on some really smooth R&B. It was a lovely way to end that night. Lux’s part of the release sends the listener into a sleek convertible in a high-end district of a city, with the cool wind in your hair and the sounds of the city melding with your radio.",
         reviewDate: new Date('2016-02-26'),   
         reviewLink: "https://www.sputnikmusic.com/review/69913/Luxury-Elite---Saint-Pepsi-Late-Night-Delight/",
+        albumId: "65136ba77159143eda69b1e0",
         },
     {
         name: "loruxz25",
@@ -289,6 +300,7 @@ const reviews = [
         content: "Don't you just see an educational videotape made in the 90s in your mind when you listen to Scenery? With scenes of a camera zooming around a fake CG skeleton explaining how bones work or some shit? Realdoll, with it's hilarious synth intro, sounds like a homemade instructional video on how to use the hairdryer you just purchased. Earth, my favorite song on the album, would most likely be played in a TV special about how awesome the future's going to be, where everything's going to look like this. It's a very fun and playful sound, and surprisingly even with it's stock nature it still all feels unique somehow. No one's made stock music quite like this before.If you take pleasure in things heavily banking on 90s kitsch, no matter how guilty it may be, check this album out. Assimilate and become o n e w i t h t h e B R A N D.",
         reviewDate: new Date('2015-10-29'),   
         reviewLink: "https://rateyourmusic.com/release/album/eyeliner/high-fashion-mood-music/",
+        albumId: "65136ba77159143eda69b1e1",
         },
     {
         name: "rubyfire77",
@@ -297,6 +309,7 @@ const reviews = [
         content: "Whereas the first album taps into and accentuates the nostalgic beauty of Ocarina of Time's soundtrack, Zeldawave II moreso plays with the bittersweetness of Majora's Mask, with its mystery, with its grief and fear and hope and healing. Those complex feelings in the dreamy atmosphere, beautiful but sometimes a little painful... That's what makes this album special.",
         reviewDate: new Date('2020-04-27'),   
         reviewLink: "https://rateyourmusic.com/release/album/polygon-dream/zeldawave-ii-%E8%BF%91%E8%97%A4-%E6%B5%A9%E6%B2%BB-mm/",
+        albumId: "65136ba77159143eda69b1e2",
         },
      {
         name: "myxogastrid",
@@ -305,6 +318,7 @@ const reviews = [
         content: "feels like sipping complimentary champagne on a first-class flight to las vegas. where you stay alone in the empty penthouse suite of a 5 star hotel. for the purpose of attending a business meeting for the coporation you work for the next day.",
         reviewDate: new Date('2019-12-10'),   
         reviewLink: "https://www.albumoftheyear.org/user/myxogastrid/album/77792-world-class/",
+        albumId: "65136ba77159143eda69b1e5",
         },
     {
         name: "national_fink_gamng",
@@ -313,6 +327,7 @@ const reviews = [
         content: "A gorgeous, evocative album, with a lush aquatic sound and organic percussion. Very good. My only complaint is each track sounds the same as every other in the whole album. Go take a listen, if you haven't yet.",
         reviewDate: new Date('2023-06-05'),   
         reviewLink: "https://rateyourmusic.com/release/album/wind96/plume-valley/#:~:text=A%20gorgeous%2C%20evocative%20album%2C%20with,other%20in%20the%20whole%20album",
+        albumId: "65136ba77159143eda69b1e9"
         },
     {
         name: "VanIsBadAtNames",
@@ -321,6 +336,7 @@ const reviews = [
         content: "In it's 22 minute runtime it feels like a whole journey, you truly feel immersed in the atmosphere that 猫 シ Corp. has made. It's just such a great soundscape, with clever usage of field recordings, reverb, and sampled melodies. Easily one of, if not the best track to come out of mallsoft.",
         reviewDate: new Date('2021-10-03'),   
         reviewLink: "https://rateyourmusic.com/release/album/%E7%8C%AB-%E3%82%B7-corp/palm-mall/reviews/1/",
+        albumId: "65136ba77159143eda69b1ea",
         },    
 ]
 
