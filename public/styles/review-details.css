@@ -9,8 +9,8 @@ body {
 
 /* Card and button style from https://uiverse.io/vinodjangid07/modern-tiger-48 */
 .card {
-    width: 500px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
     display: flex;
     flex-direction: column; 
     justify-content: space-between; 
@@ -84,9 +84,63 @@ h4 {
     opacity: 0.4;
 }
 
-
-
 section {
-    transform: translate(0px, 90px);
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 360px) {
+    section {
+        margin-top: 70px;
+    }
+
+    .card {
+        width: 320px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 500px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1023) {
+    .card {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 450px;
+        height: 320px;
+    }
+
+    section {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .card {
+        width: 500px;
+        height: 400px;
+    }
+    section {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card {
+        width: 600px;
+        height: 500px;
+    }
+    section {
+        margin-top: 50px;
+    }
 }
 
