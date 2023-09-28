@@ -1,5 +1,5 @@
 body {
-    background-image: url('/assets/images/backgrounds/review-index.jpg');
+    background-image: url('/assets/images/backgrounds/ipad-index.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -123,4 +123,3 @@ section {
         padding: 20px 115px;
     }
 }
-
