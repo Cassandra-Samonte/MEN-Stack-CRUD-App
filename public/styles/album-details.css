@@ -49,17 +49,6 @@ p {
 }
 
 @media screen and (min-width: 279px) and (max-width: 359px) {
-    .navbar-toggler {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        border: none;
-        scale: 1.2;
-    }
-    .navbar-toggler-icon {
-        background-image: url("/assets/images/icon.png");
-    }
-
     .responsive-header {
         display: block;
         text-align: center;
@@ -81,17 +70,6 @@ p {
 }
 
 @media screen and (min-width: 360px) and (max-width: 414px) {
-    .navbar-toggler {
-        position: absolute;
-        top: 6px;
-        right: 3px;
-        border: none;
-        scale: 1.2;
-    }
-    .navbar-toggler-icon {
-        background-image: url("/assets/images/icon.png");
-    }
-
     .responsive-header {
         display: block;
         text-align: center;
@@ -113,17 +91,6 @@ p {
 }
 
 @media screen and (min-width: 410px) and (max-width: 500px) {
-    .navbar-toggler {
-        position: absolute;
-        top: 6px;
-        right: 3px;
-        border: none;
-        scale: 1.2;
-    }
-    .navbar-toggler-icon {
-        background-image: url("/assets/images/icon.png");
-    }
-
     .responsive-header {
         display: block;
         text-align: center;
@@ -145,17 +112,6 @@ p {
 }
 
 @media screen and (min-width: 530px) and (max-width: 580px) {
-    .navbar-toggler {
-        position: absolute;
-        top: 6px;
-        right: 3px;
-        border: none;
-        scale: 1.2;
-    }
-    .navbar-toggler-icon {
-        background-image: url("/assets/images/icon.png");
-    }
-
     .responsive-header {
         display: block;
         text-align: center;
@@ -178,17 +134,6 @@ p {
 @media screen and (min-width: 750px) and (max-width: 913px) {
     body {
         background-image: url('/assets/images/backgrounds/ipad-details.png');
-    }
-
-    .navbar-toggler {
-        position: absolute;
-        top: 6px;
-        right: 3px;
-        border: none;
-        scale: 1.5;
-    }
-    .navbar-toggler-icon {
-        background-image: url("/assets/images/icon.png");
     }
 
     .responsive-header {
@@ -223,18 +168,6 @@ p {
 }
 
 @media screen and (min-width: 990px) and (max-width: 1023px) {
-    .navbar-toggler {
-        position: absolute;
-        top: 6px;
-        right: 3px;
-        border: none;
-        scale: 1.5;
-    }
-
-    .navbar-toggler-icon {
-        background-image: url("/assets/images/icon.png");
-    }
-
     p {
         font-size: 11px;
         transform: translate(0px, 80px);
