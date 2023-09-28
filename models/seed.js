@@ -44,7 +44,7 @@ const albums = [
         album: "Floral Shoppe",
         releaseDate: new Date('2011-12-09'),
         whereToListen: "https://vektroid.bandcamp.com/album/floral-shoppe",
-        photo: "/assets/images/album-covers/Macintosh-Plus-Floral-Shoppe.png",
+        photo: "/assets/images/album-covers/macplus.jpg",
         description: "Floral Shoppe is the ninth studio album by the American electronic musician Vektroid under the alias Macintosh Plus, released on December 9, 2011 by the independent record label Beer on the Rug. It is her ninth full-length album and was one of the first releases of the 2010s microgenre known as vaporwave to gain popular recognition on the Internet. Since then, Floral Shoppe has been considered by some critics to be the defining album of the style.",
         },
     {
