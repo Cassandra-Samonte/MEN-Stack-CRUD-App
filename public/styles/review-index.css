@@ -99,7 +99,28 @@ section {
     text-align: center;
 }
 
-.container {
-    padding: 20px 115px;
+@media screen and (min-width: 360px) and (max-width: 540px) {
+    .card {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1100) {
+    .container {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 40px 70px;
+    }
+}
+
+@media screen and (min-width: 1400px)  {
+    .container {
+        padding: 20px 115px;
+    }
 }
 
