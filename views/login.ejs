@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs', {title: 'Vapor Vault'}) %>
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+    <form action="/private/login" method="post">
+        
+        <div class="InputContainer">
+            <input placeholder="Password" id="password" class="input" name="password" type="password" required>
+        </div>
+    </form>
+</body>
+</html>

@@ -84,6 +84,17 @@ app.get('/seed', async function (req, res) {
 })
 
 
+// Login Route
+app.get('/private/login', (req, res) => {
+    res.render('login'); 
+  });
+
+// Private Route 
+app.get('/private', (req, res) => {
+    res.send('This is the private route')
+});
+
+
 // This tells our app to look at the `controllers/albums.js` file 
 // to handle all routes that begin with `localhost:3000/albums`
 app.use('/albums', albumsCtrl)
@@ -91,10 +102,6 @@ app.use('/albums', albumsCtrl)
 app.use('/reviews', reviewsCtrl)
 // Login route
 app.use('/login', loginCtrl)
-
-app.get('/private', (req, res) => {
-    res.send('This is the private route')
-});
 
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes
