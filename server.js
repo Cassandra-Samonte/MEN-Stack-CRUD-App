@@ -16,6 +16,7 @@ const db = require('./models');
 --------------------------------------------------------------- */
 const albumsCtrl = require('./controllers/albums')
 const reviewsCtrl = require('./controllers/reviews')
+const loginCtrl = require('./controllers/login')
 
 
 /* Create the Express app
@@ -88,6 +89,12 @@ app.get('/seed', async function (req, res) {
 app.use('/albums', albumsCtrl)
 // This tells our app to look at the `controllers/reviews.js` file 
 app.use('/reviews', reviewsCtrl)
+// Login route
+app.use('/login', loginCtrl)
+
+app.get('/private', (req, res) => {
+    res.send('This is the private route')
+});
 
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes
