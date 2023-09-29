@@ -3,7 +3,7 @@ const router = express.Router();
 require('dotenv').config();
 
 // Route for password authentication
-router.post('/login', (req, res) => {
+router.post('/', (req, res) => {
     const { password } = req.body;
     const correctPassword = process.env.PASSWORD;
 
