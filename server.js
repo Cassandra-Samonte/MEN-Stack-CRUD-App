@@ -92,7 +92,7 @@ app.get('/private/login', (req, res) => {
 
 // Private Route 
 app.get('/private', (req, res) => {
-    res.res.render('private');
+    res.render('private');
 });
 
 

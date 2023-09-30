@@ -67,6 +67,9 @@ h1 {
   width: 100%; 
   text-align: center;
   background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -76,11 +79,19 @@ h1 {
   text-decoration: none; 
   text-transform: uppercase; 
   font-size: 18px;
+  text-align: center;
 }
+
 
 .footerlink:hover {
   opacity: 0.5; 
 } 
+
+.klink {
+  margin-left: auto;
+}
+
+
 
 @media screen and (min-width: 1024px) {
   .nav-link {
