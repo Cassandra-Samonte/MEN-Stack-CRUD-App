@@ -1,4 +1,4 @@
-<img width="1512" alt="7" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/27239622-48e6-414c-ad68-8b5c14cae2a1"># MEN Stack - CRUD App
+# MEN Stack - CRUD App
 Technologies Used:
 
 MEN Stack - CRUD App: A comprehensive application utilizing the MEN stack (MongoDB, Express, Node.js) paired with EJS for templating and CSS for styling.
