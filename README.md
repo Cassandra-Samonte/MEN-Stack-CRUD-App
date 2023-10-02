@@ -22,7 +22,7 @@ Before you begin, ensure you have Node.js and MongoDB installed on your machine.
 1. Clone the Repository: 
 - Open your terminal or command prompt. 
 - Navigate to the directory where you want to save your project. 
-- Copy the project link on this page under '<code>'
+- Copy the project link on this page under code
 - In your terminal enter the following prompt: git clone (paste project link here)
 2. Navigate to the Project Directory 
 - In your terminal enter the following command: cd MEN-Stack-CRUD-App 
