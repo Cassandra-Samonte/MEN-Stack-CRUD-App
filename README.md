@@ -1,9 +1,40 @@
 # MEN Stack - CRUD App
-A MEN-Stack CRUD App using MongoDB/Mongoose, Express, Node.js, EJS and CSS
+Technologies Used:
+
+MEN Stack - CRUD App: A comprehensive application utilizing the MEN stack (MongoDB, Express, Node.js) paired with EJS for templating and CSS for styling.
+
+MongoDB: A widely-adopted NoSQL database, MongoDB stores data in a flexible, JSON-like format, making it versatile for a variety of applications.
+
+Express.js: Serving as a minimalistic and adaptable web application framework within the Node.js environment, Express facilitates the creation of feature-rich web and mobile applications.
+
+Node.js: Operating as a server-side platform, Node.js is constructed on Google Chrome's JavaScript runtime. This design promotes the development of scalable network-centric applications.
+
+Bootstrap: This free and open-source CSS framework emphasizes responsive and mobile-first front-end web development, ensuring applications are accessible across devices of varying sizes.
+
+EJS (Embedded JavaScript templates): EJS provides a simple templating language that lets you generate HTML markup with plain JavaScript. It's a key tool for rendering views in this MEN stack application.
+
+CSS: The cornerstone of web aesthetics, CSS (Cascading Style Sheets) provides the style definitions for how web content appears, allowing developers to craft visually appealing user interfaces.
+
+
+## Installation Instructions
+Before you begin, ensure you have Node.js and MongoDB installed on your machine.
+1. Clone the Repository:
+- Open your terminal or command prompt.
+- Navigate to the directory where you want to save the project.
+- Copy the project link on this page under <code>
+- In your terminal enter the following command: git clone (paste project link here)  
+2. Navigate to the Project Directory:
+- In your terminal enter the following command: cd MEN-Stack-CRUD-App  
+3. Install Dependencies:
+- In your terminal enter the following command: npm install 
+4. Start the Application:
+- In your terminal enter the following command: npm start   
+5. Open in Browser:
+Once the application starts, it will be available at http://localhost:3000/
 
 
 ## Route Table
-<img width="789" alt="routes" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/6637bffd-139a-40aa-bbc3-08860e9b555b">
+<img width="779" alt="Route Table" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/b6be0585-d885-435c-bcf2-c5da3a16f758">
 
 
 ## Wire Frames
@@ -53,3 +84,9 @@ The core objective is to deliver a fully functional MEN stack application. The t
 ## Secure Route for Personal Note:
 - Implement an encrypted, password-protected route accessible only to specific users, such as my boyfriend (this is his collection), to view a personalized note from me.
 
+## Unsolved Problems & Major Hurdles
+## Database Connections:
+Initially, integrating MongoDB with Express was challenging. The addition of more schemas further compounded this complexity. To address this, I chose to reference the schemas rather than embed them, which facilitated the seamless integration of all seed data into the application.
+
+## Responsive Design:
+Implementing a mobile-optimized design with Bootstrap presented hurdles, especially in ensuring a uniform user interface (UI) across different devices. Through iterative testing on multiple screen dimensions, I tailored three unique backgrounds for mobile, tablet, and desktop interfaces to achieve design consistency. An outstanding issue remains with Bootstrap's navigation toggle button, which is non-responsive upon clicking. This is an area I am actively addressing.
