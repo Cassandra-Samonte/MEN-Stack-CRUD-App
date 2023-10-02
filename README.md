@@ -1,4 +1,4 @@
-# MEN Stack - CRUD App
+<img width="1512" alt="7" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/27239622-48e6-414c-ad68-8b5c14cae2a1"># MEN Stack - CRUD App
 Technologies Used:
 
 MEN Stack - CRUD App: A comprehensive application utilizing the MEN stack (MongoDB, Express, Node.js) paired with EJS for templating and CSS for styling.
@@ -35,6 +35,19 @@ Once the application starts, it will be available at http://localhost:3000/
 
 ## Route Table
 <img width="779" alt="Route Table" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/b6be0585-d885-435c-bcf2-c5da3a16f758">
+
+
+## Final Project
+<img width="1512" alt="1" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/f73812d1-114b-4d0e-a849-61422ae97d50">
+<img width="1512" alt="2" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/527579e4-8dc3-4ad2-92b4-9dbb91eac129">
+<img width="1512" alt="3" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/9abcdc38-e1c4-496f-8b54-65772035f92f">
+<img width="1512" alt="4" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/d9d64a5c-8433-4a0e-b62a-b3831b44e728">
+<img width="1512" alt="5" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/e7fc2d0f-5894-4480-86b7-b2139e129454">
+<img width="1512" alt="6" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/ab155dde-6fdd-4f79-9bb6-4a64311b66cb">
+<img width="1512" alt="7" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/06eea93e-6e32-4ddb-a0c5-b6134cee246c">
+<img width="1512" alt="8" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/e8ed61be-d79b-40b7-b7ff-3241bf0203a3">
+<img width="1512" alt="9" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/fb0b4f0b-2b8e-4f54-96b0-7cff8d457b0f">
+
 
 
 ## Wire Frames
