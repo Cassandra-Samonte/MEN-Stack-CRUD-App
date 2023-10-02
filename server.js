@@ -87,7 +87,7 @@ app.get('/seed', async function (req, res) {
 // Login Route
 app.get('/private/login', (req, res) => {
     res.render('login'); 
-  });
+});
 
 
 // Private Route 
