@@ -47,6 +47,7 @@ Once the application starts, it will be available at http://localhost:3000/
 <img width="1512" alt="7" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/06eea93e-6e32-4ddb-a0c5-b6134cee246c">
 <img width="1512" alt="8" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/e8ed61be-d79b-40b7-b7ff-3241bf0203a3">
 <img width="1512" alt="9" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/fb0b4f0b-2b8e-4f54-96b0-7cff8d457b0f">
+<img width="1511" alt="10" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/e7232470-1441-4216-ba7e-dbbea79f02cd">
 
 
 ## Wire Frames
