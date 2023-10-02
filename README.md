@@ -20,22 +20,22 @@ CSS: The cornerstone of web aesthetics, CSS (Cascading Style Sheets) provides th
 Before you begin, ensure you have Node.js and MongoDB installed on your machine.
 
 1. Clone the Repository: 
-Open your terminal or command prompt. 
-Navigate to the directory where you want to save your project. 
-Copy the project link on this page under <code> 
-In your terminal enter the following prompt: git clone (paste project link here)
+- Open your terminal or command prompt. 
+- Navigate to the directory where you want to save your project. 
+- Copy the project link on this page under <code>
+- In your terminal enter the following prompt: git clone (paste project link here)
 
 2. Navigate to the Project Directory 
-In your terminal enter the following command: cd MEN-Stack-CRUD-App 
+- In your terminal enter the following command: cd MEN-Stack-CRUD-App 
 
 3. Install Dependencies: 
-In your terminal enter the following command: npm install 
+- In your terminal enter the following command: npm install 
 
 4. Start the Application: 
-In your terminal enter the following command: npm start
+- In your terminal enter the following command: npm start
 
 5. Open in Browser: 
-Once the application starts, it will be available at http://localhost:3000/
+- Once the application starts, it will be available at http://localhost:3000/
 
 
 ## Route Table
