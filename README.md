@@ -22,13 +22,13 @@ Before you begin, ensure you have Node.js and MongoDB installed on your machine.
 - Open your terminal or command prompt.
 - Navigate to the directory where you want to save the project.
 - Copy the project link on this page under <code>
-- In your terminal enter the following command: git clone (paste project link here)  
+- In your terminal enter the following command: git clone (paste project link here) 
 2. Navigate to the Project Directory:
-- In your terminal enter the following command: cd MEN-Stack-CRUD-App  
+- In your terminal enter the following command: cd MEN-Stack-CRUD-App 
 3. Install Dependencies:
 - In your terminal enter the following command: npm install 
 4. Start the Application:
-- In your terminal enter the following command: npm start   
+- In your terminal enter the following command: npm start  
 5. Open in Browser:
 Once the application starts, it will be available at http://localhost:3000/
 
@@ -47,7 +47,6 @@ Once the application starts, it will be available at http://localhost:3000/
 <img width="1512" alt="7" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/06eea93e-6e32-4ddb-a0c5-b6134cee246c">
 <img width="1512" alt="8" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/e8ed61be-d79b-40b7-b7ff-3241bf0203a3">
 <img width="1512" alt="9" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/fb0b4f0b-2b8e-4f54-96b0-7cff8d457b0f">
-
 
 
 ## Wire Frames
