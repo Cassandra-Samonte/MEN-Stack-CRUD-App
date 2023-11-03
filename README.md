@@ -1,4 +1,4 @@
-# MEN Stack - CRUD App
+# Vapor Vault
 Technologies Used:
 
 MEN Stack - CRUD App: A comprehensive application utilizing the MEN stack (MongoDB, Express, Node.js) paired with EJS for templating and CSS for styling.
