@@ -52,7 +52,7 @@ Before you begin, ensure you have Node.js and MongoDB installed on your machine.
       - Evaluate a fully functioning application built using MEN-Stack (MongoDB/Mongoose, Express, Node.js, EJS and CSS).
       - Discover the implementation of CRUD operations.
 
-# Final Project
+# Deployed App
 ## www.vapor-vault.com
 <img width="1512" alt="1" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/f73812d1-114b-4d0e-a849-61422ae97d50">
 <img width="1512" alt="2" src="https://github.com/Cassandra-Samonte/MEN-Stack-CRUD-App/assets/142133887/527579e4-8dc3-4ad2-92b4-9dbb91eac129">
